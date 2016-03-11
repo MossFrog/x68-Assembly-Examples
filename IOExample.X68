@@ -20,6 +20,10 @@ START: ORG    $1000
     MOVE.L D1,D5
     ADD D1,D5
     
+    LEA MESSAGE2,A1
+    MOVE.B #14,D0
+    TRAP #15
+    
     MOVE D5,D1
     MOVE.B #3,D0
     TRAP #15
@@ -30,8 +34,10 @@ START: ORG    $1000
 
 MESSAGE DC.B 'Welcome to a simple IO Example',CR,LF
         DC.B 'Please enter a number : ',0
+MESSAGE2 DC.B  'Double of your input is -> ',0
 
     END    START        ; last line of source
+
 
 
 *~Font name~Courier New~
