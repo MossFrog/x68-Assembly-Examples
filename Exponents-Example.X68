@@ -1,8 +1,8 @@
 *-----------------------------------------------------------
-* Title      : ASCII Bitwise operations.
+* Title      : Exponents of Two
 * Written by : Kaan Ozcelik
-* Date       : 11.3.2016
-* Description: Text input and parity bitwise control.
+* Date       : 13.3.2016
+* Description: Displays the powers of two until maximum memory size is achieved.
 *-----------------------------------------------------------
 CR EQU $0D 
 LF EQU $0A
@@ -79,6 +79,7 @@ ACTUAL: DC.L 2
 
 
     END    START        ; last line of source
+
 
 
 
