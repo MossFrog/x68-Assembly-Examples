@@ -86,11 +86,11 @@ ENDPRINT:
     
 END:
     	;-- Print the new bit-string with the altered parity bit --;
-    	movem.l	d0-d1,-(sp)	
+    	MOVEM.L	D0-D1,-(SP)	
 	LEA 	NULLSTR,A1 ;-- Skip a line.
 	MOVE.W	#$0D,-(SP)
 	TRAP	#4
-	movem.l	(sp)+,d0-d1
+	MOVEM.L	(SP)+,D0-D1
     
     	MOVE.L D1,D2 ;-- Move the contents of D1 into D2 for preservation.
     	JSR PRINT
