@@ -23,11 +23,12 @@ main:
 	
 	MOVE.W  D0,D1 ;-- Move the input character to register D1
 	
-	movem.l	d0-d1,-(sp)	
+	;-- Whenever we decide to call a stringout function we need to throw data in registers D0 and D1 to the stack for preservation.
+	MOVEM.L	D0-D1,-(SP)	
 	LEA 	NULLSTR,A1 ;-- Skip a line.
 	MOVE.W	#$0D,-(SP)
 	TRAP	#4
-	movem.l	(sp)+,d0-d1
+	MOVEM.L	(SP)+,D0-D1
 	
 	;CLR.L D5 ;-- Clear the registers.
     	;CLR.L D6
