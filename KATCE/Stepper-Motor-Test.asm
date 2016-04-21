@@ -2,10 +2,10 @@
 	
 
 ;-----------------------------------------------------------
-; Title      :  Stepper Motor Control for the KATCE Microcomputer
+; Title      :  Stepper Motor Tester for the KATCE Microcomputer
 ; Written by :  Kaan Ozcelik
 ; Date       :  7.4.2016
-; Description:  Uses PC keyboard input to control a stepper motor through a serial link.
+; Description:  Uses the output ports on the Motorola 68000 to rotate a stepper motor clockwise.
 ;-----------------------------------------------------------
 
 
